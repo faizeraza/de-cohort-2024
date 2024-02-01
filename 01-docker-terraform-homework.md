@@ -53,5 +53,15 @@ second
 SELECT lpep_pickup_datetime from yellow_taxi_trips where trip_distance=(SELECT MAX(trip_distance)
 	FROM public.yellow_taxi_trips);
 ```
+## Question 5. Three biggest pick up Boroughs
 
+Consider lpep_pickup_datetime in '2019-09-18' and ignoring Borough has Unknown
+
+Which were the 3 pick up Boroughs that had a sum of total_amount superior to 50000?
+```
+SELECT z."Borough" AS total_amount
+FROM zones AS z
+INNER JOIN yellow_taxi_trips AS yt ON z."LocationID" = yt."PULocationID"
+GROUP BY z."Borough" having sum(yt."total_amount")>50000 limit 3;
+```
 
