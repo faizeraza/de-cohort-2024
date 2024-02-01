@@ -64,4 +64,18 @@ FROM zones AS z
 INNER JOIN yellow_taxi_trips AS yt ON z."LocationID" = yt."PULocationID"
 GROUP BY z."Borough" having sum(yt."total_amount")>50000 limit 3;
 ```
+### Question 6. Largest tip
+
+For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip? We want the name of the zone, not the id.
+
+```
+WITH boroughinzone as(
+	SELECT "LocationID" FROM zones where "Zone" like 'Astoria'
+),
+zoneofmaxtip as (
+	SELECT "DOLocationID" FROM yellow_taxi_trips as ytt WHERE SUBSTRING(lpep_pickup_datetime, 1, 7) >= '2019-09' 
+	AND "PULocationID" = (SELECT "LocationID" FROM boroughinzone) ORDER BY tip_amount DESC LIMIT 1
+)
+select "Zone" from zones where "LocationID" = (SELECT "DOLocationID" FROM zoneofmaxtip);
+```
 
