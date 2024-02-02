@@ -1,5 +1,5 @@
 ## Module 1 Homework
-this modile was overdue due to exams and as a beginner it took time to learn and get familiar with docker 
+this module was overdue due to exams and as a beginner it took time to learn and get familiar with docker 
 
 ## Question 1. Knowing docker tags
   Which tag has the following text? - *Automatically remove the container when it exits* .
