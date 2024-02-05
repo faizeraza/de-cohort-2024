@@ -9,7 +9,7 @@ Highlights from the module:
 ✅ Learned about parameterized execution for flexible pipelines 
 
 Flowchart
-<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qnETLChart.png" />
+<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/ETLChart.png" />
 
 
 
