@@ -53,6 +53,7 @@ def load_data_from_api(*args, **kwargs):
     return data
 ```
 Output:
+<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qn1.png" />
 
 ## Question 2. Data Transformation
 
@@ -86,6 +87,7 @@ def test_output(output, *args) -> None:
     assert output is not None, 'The output is undefined'
 ```
 Output:
+<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qn2.png" />
 
 ## Question 3. Data Transformation
 
@@ -109,6 +111,7 @@ Code:
 print(data["VendorID"].unique())
 ```
 Output:
+<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qn3.png" />
 
 ## Question 5. Data Transformation
 
@@ -127,6 +130,6 @@ Once exported, how many partitions (folders) are present in Google Cloud?
 answer is 96
 
 output:
-<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qn1.png" />
+<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qn6.png" />
 
 
