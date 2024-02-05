@@ -13,7 +13,7 @@ this module was overdue due to exams and as a beginner it took time to learn and
   docker run -it python:3.9 pip list
 ```
 output:
-![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/qn2.png)
+![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/images/qn2.png)
 
 ## Question 3. Count records 
 
@@ -36,7 +36,7 @@ AND SUBSTRING(lpep_dropoff_datetime, 1, 10) >= '2019-09-18'
 AND SUBSTRING(lpep_dropoff_datetime, 1, 10) < '2019-09-19';
 ```
 output:
-![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/qn3.png)
+![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/images/qn3.png)
 
 ## Question 4. Longest trip for each day
 
@@ -59,7 +59,7 @@ SELECT lpep_pickup_datetime from yellow_taxi_trips where trip_distance=(SELECT M
 ```
 
 output:
-![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/qn4.png)
+![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/images/qn4.png)
 
 ## Question 5. Three biggest pick up Boroughs
 
@@ -73,7 +73,7 @@ INNER JOIN yellow_taxi_trips AS yt ON z."LocationID" = yt."PULocationID"
 GROUP BY z."Borough" having sum(yt."total_amount")>50000 limit 3;
 ```
 output:
-![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/qn5.png)
+![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/images/qn5.png)
 ### Question 6. Largest tip
 
 For the passengers picked up in September 2019 in the zone name Astoria which was the drop off zone that had the largest tip? We want the name of the zone, not the id.
@@ -88,5 +88,5 @@ zoneofmaxtip as (
 )
 select "Zone" from zones where "LocationID" = (SELECT "DOLocationID" FROM zoneofmaxtip);
 ```
-![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/qn6.png)
+![alt text](https://github.com/faizeraza/de-cohort-2024/blob/main/images/qn6.png)
 
