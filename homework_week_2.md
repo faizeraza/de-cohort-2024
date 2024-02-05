@@ -127,6 +127,6 @@ Once exported, how many partitions (folders) are present in Google Cloud?
 answer is 96
 
 output:
-<img src="images/architecture/arch_v3_workshops.jpg" />
+<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qn1.png" />
 
 
