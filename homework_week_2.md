@@ -1,5 +1,17 @@
 ## Week 2 Homework
-desc..
+I this second module I have learnt bellow topics:
+Highlights from the module: 
+✅ Reviewed workflow orchestration fundamentals 
+✅ Got acquainted with Mage for seamless orchestration 
+✅ Implemented ETL processes: API to Postgres and API to GCS 
+✅ Writing partitioned and unpartitioned data to GCS 
+✅ Executed ETL from Data Lake to Data Warehouse (GCS to BigQuery) 
+✅ Learned about parameterized execution for flexible pipelines 
+
+Flowchart
+<img src="https://github.com/faizeraza/de-cohort-2024/blob/main/images/w2qnETLChart.png" />
+
+
 
 ## Question 1. Data Loading
 
